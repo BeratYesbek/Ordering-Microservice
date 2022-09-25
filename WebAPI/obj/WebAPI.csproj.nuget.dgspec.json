@@ -4,6 +4,297 @@
     "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
+    "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\berat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\berat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\berat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\berat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj"
+              },
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +318,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj"
+              },
+              "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\Persistence.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
