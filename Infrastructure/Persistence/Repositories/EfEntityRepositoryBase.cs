@@ -4,10 +4,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Entities;
+using Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Core.Persistence.Repositories
+namespace Infrastructure.Persistence.Repositories
 {
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>, IAsyncEntityRepository<TEntity> where TEntity : Entity, new() where TContext : DbContext
     {

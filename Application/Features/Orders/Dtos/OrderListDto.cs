@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Infrastructure.Entities;
 
-namespace Domain.Entities
+namespace Application.Features.Orders.Dtos
 {
-    public class Order : Entity
+    public class OrderListDto 
     {
+        public int Id { get; set; }
         public int ExternalUserId { get; set; }
         public decimal TotalPrice { get; set; }
 
