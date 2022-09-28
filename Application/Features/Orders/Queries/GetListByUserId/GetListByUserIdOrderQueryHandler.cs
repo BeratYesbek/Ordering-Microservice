@@ -23,7 +23,7 @@ namespace Application.Features.Orders.Queries.GetListByUserId
         }
         public async Task<List<OrderListDto>> Handle(GetListByUserIdOrderQuery request, CancellationToken cancellationToken)
         {
-            var result = await _orderRepository.GetAllAsync(o => o.ExternalUserId.Equals(request.UserId));
+            var result = await _orderRepository.GetAllAsync();
             var orderListDto = _mapper.Map<List<OrderListDto>>(result);
             return orderListDto;
         }

@@ -11,10 +11,5 @@ namespace Application.Features.Orders.Queries.GetListByUserId
     public class GetListByUserIdOrderQuery : IRequest<List<OrderListDto>>
     {
         public int UserId { get; set; }
-
-        public GetListByUserIdOrderQuery(int userId)
-        {
-            UserId = userId;
-        }
     }
 }

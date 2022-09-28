@@ -1,5 +1,7 @@
 using Application.Extensions.ServiceRegistirations;
+using MediatR;
 using Persistence.Extensions.ServiceRegistrations;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationService();
 builder.Services.AddPersistenceServices(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(Program));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

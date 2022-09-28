@@ -13,8 +13,8 @@ namespace Application.Extensions.ServiceRegistirations
     {
         public static IServiceCollection AddApplicationService(this IServiceCollection services)
         {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
+
             return services;
         }
     }
