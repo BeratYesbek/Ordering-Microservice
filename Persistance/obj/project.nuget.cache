@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HX6Ji2EZhoiCWnlSwtJIUdkGFLnQArAdWi+Dub/ZSwbrip2Zhl1YKm2i8yAXbfSTwLMQwUnyfKtkAoY/W/4FTw==",
+  "dgSpecHash": "qjnEA883VYRvr8YS/lY5KvdHQrehd+nt0TYUqHl9xYVr14zZpJdJAkAtLnF1v/oRpk634xBbhgIxg64xvuRDwg==",
   "success": true,
   "projectFilePath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\berat\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\automapper.collection\\8.0.0\\automapper.collection.8.0.0.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\automapper.extensions.expressionmapping\\5.1.0\\automapper.extensions.expressionmapping.5.1.0.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",

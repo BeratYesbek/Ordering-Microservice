@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Application.Features.Orders.Dtos;
+using Application.Features.Orders.Profiles;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;

@@ -28,5 +28,7 @@ namespace Application.Features.Orders.Commands.Create
         public string? Expiration { get; set; }
         public string? CVV { get; set; }
         public int PaymentMethod { get; set; }
+
+
     }
 }

@@ -18,6 +18,34 @@
           }
         }
       },
+      "AutoMapper.Collection/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[11.0.0, 12.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Collection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Collection.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.ExpressionMapping/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[11.0.0, 12.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/11.0.0": {
         "type": "package",
         "dependencies": {
@@ -859,6 +887,33 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Collection/8.0.0": {
+      "sha512": "GrW7DOb33f0FQP3I6lwFuyaA1TrQilEMB1NaI35/e0x+7Zjjc/xnKDmQm0tbWyQ3Z/CTBX/PSHZTMtUzF+9Xdw==",
+      "type": "package",
+      "path": "automapper.collection/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.collection.8.0.0.nupkg.sha512",
+        "automapper.collection.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Collection.dll"
+      ]
+    },
+    "AutoMapper.Extensions.ExpressionMapping/5.1.0": {
+      "sha512": "o62czvnBm4qYkpMBaCT1VNzxcgTPYS+a3IInfE2HQgUFYtMJreYyEhpR6etiPZes0VBxewaU1rvWEwpvPeAygg==",
+      "type": "package",
+      "path": "automapper.extensions.expressionmapping/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.expressionmapping.5.1.0.nupkg.sha512",
+        "automapper.extensions.expressionmapping.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll",
+        "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.xml"
       ]
     },
     "AutoMapper.Extensions.Microsoft.DependencyInjection/11.0.0": {
@@ -2095,6 +2150,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 11.0.1",
+      "AutoMapper.Collection >= 8.0.0",
+      "AutoMapper.Extensions.ExpressionMapping >= 5.1.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Domain >= 1.0.0",
       "Infrastructure >= 1.0.0"
@@ -2149,6 +2206,14 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[11.0.1, )"
+          },
+          "AutoMapper.Collection": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "AutoMapper.Extensions.ExpressionMapping": {
+            "target": "Package",
+            "version": "[5.1.0, )"
           },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",

@@ -13,7 +13,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationService();
 builder.Services.AddPersistenceServices(builder.Configuration);
-builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 

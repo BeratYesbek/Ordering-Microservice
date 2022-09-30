@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,7 +14,9 @@ namespace Application.Extensions.ServiceRegistirations
     {
         public static IServiceCollection AddApplicationService(this IServiceCollection services)
         {
-            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
             return services;
         }

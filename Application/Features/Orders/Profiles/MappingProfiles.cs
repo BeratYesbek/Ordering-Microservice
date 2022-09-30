@@ -14,10 +14,9 @@ namespace Application.Features.Orders.Profiles
     {
         public MappingProfiles()
         {
-            CreateMap<List<Order>, List<OrderListDto>>().ReverseMap();
-            CreateMap<Order, CreateOrderDto>().ReverseMap();
-            CreateMap<CreateOrderCommand, CreateOrderDto>().ReverseMap();
             CreateMap<Order, CreateOrderCommand>().ReverseMap();
+            CreateMap<Order, CreateOrderDto>().ReverseMap();
+            CreateMap<Order, OrderListDto>().ReverseMap();
         }
     }
 }

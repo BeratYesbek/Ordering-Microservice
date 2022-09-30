@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nGRb9O46LcdOLnZlsVM01VZ19+mUOMUayIsFzxJJNXSEkxS1rWv7+Uiz6Pq+aILkpaIMjv00G6fs21PNrbo+Qg==",
+  "dgSpecHash": "AOudV2y20ovsZPBww+zPLdjwJKHn9MipYkPDoHs8EjCh6wKRcnEbojQYAgC6BkDzgB/Ri6rBKHMSYXHhEOotQw==",
   "success": true,
   "projectFilePath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\berat\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\automapper.collection\\8.0.0\\automapper.collection.8.0.0.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\automapper.extensions.expressionmapping\\5.1.0\\automapper.extensions.expressionmapping.5.1.0.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

@@ -21,6 +21,7 @@ namespace Persistence.Extensions.ServiceRegistrations
                 opt.UseSqlServer(configuration.GetConnectionString("OrderDbConnectionString")));
 
             services.AddScoped<IOrderRepository, OrderRepository>();
+
             return services;
         }
     }
