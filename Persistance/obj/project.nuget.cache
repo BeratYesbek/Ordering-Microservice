@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qjnEA883VYRvr8YS/lY5KvdHQrehd+nt0TYUqHl9xYVr14zZpJdJAkAtLnF1v/oRpk634xBbhgIxg64xvuRDwg==",
+  "dgSpecHash": "DsyC0bfobApj3G2LEn5Csv2//wgegcIf3PoHngXaVCRNST5AqQaPL9hKc94AA1bW2roYW0V3gijRM5VwBcHpMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\berat\\source\\repos\\Ordering-Microservice\\Persistance\\Persistence.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\berat\\.nuget\\packages\\automapper.collection\\8.0.0\\automapper.collection.8.0.0.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\automapper.extensions.expressionmapping\\5.1.0\\automapper.extensions.expressionmapping.5.1.0.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.2\\fluentvalidation.dependencyinjectionextensions.11.2.2.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\berat\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
