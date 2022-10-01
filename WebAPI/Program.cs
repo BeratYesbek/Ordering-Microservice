@@ -2,6 +2,7 @@ using Application.Extensions.ServiceRegistirations;
 using MediatR;
 using Persistence.Extensions.ServiceRegistrations;
 using System.Reflection;
+using Infrastructure.CrossCuttingConcerns.Exceptions.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.ConfigureCustomExceptionMiddleware();
 
 app.UseAuthorization();
 

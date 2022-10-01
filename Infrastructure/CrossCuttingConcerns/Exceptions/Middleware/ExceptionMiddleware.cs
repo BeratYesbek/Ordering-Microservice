@@ -5,6 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
+using Infrastructure.Utilities.Exceptions;
 using Microsoft.AspNetCore.Http;
 
 namespace Infrastructure.CrossCuttingConcerns.Exceptions.Middleware
@@ -41,22 +42,18 @@ namespace Infrastructure.CrossCuttingConcerns.Exceptions.Middleware
             context.Response.StatusCode = Convert.ToInt32(HttpStatusCode.BadRequest);
             object errors = ((ValidationException)exception).Errors;
 
-            return context.Response.WriteAsync(new
+            return context.Response.WriteAsync(new CustomValidationException
             {
-                Status = StatusCodes.Status400BadRequest,
+                StatusCode = StatusCodes.Status400BadRequest,
                 Errors = errors
-            }.ToString()!);
+            }.ToString());
         }
 
         public Task CreateInternalServerError(HttpContext context, Exception exception)
         {
             context.Response.StatusCode = Convert.ToInt32(HttpStatusCode.InternalServerError);
 
-            return context.Response.WriteAsync(new
-            {
-                Status = StatusCodes.Status500InternalServerError,
-                Message = exception.Message
-            }.ToString()!);
+            return context.Response.WriteAsync(new CustomExceptionDetail(StatusCodes.Status500InternalServerError, exception.Message).ToString());
         }
 
     }
