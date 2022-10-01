@@ -3,6 +3,7 @@ using Application.Features.Orders.Queries.GetListByUserId;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Serilog.Events;
 
 namespace WebAPI.Controllers
 {
@@ -10,6 +11,11 @@ namespace WebAPI.Controllers
     [ApiController]
     public class OrdersController : BaseController
     {
+        public OrdersController(Serilog.ILogger logger)
+        {
+            //logger.Write(new LogEvent(DateTimeOffset.Now, LogEventLevel.Warning,null,new MessageTemplate("",null),null));
+            logger.Information("Hello World");
+        }
 
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] CreateOrderCommand createOrderCommand)

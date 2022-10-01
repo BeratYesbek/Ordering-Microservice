@@ -108,6 +108,18 @@
               "target": "Package",
               "version": "[2.12.0, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
             "Serilog.Sinks.MSSqlServer": {
               "target": "Package",
               "version": "[5.8.0, )"

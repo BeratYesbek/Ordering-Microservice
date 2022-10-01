@@ -3,6 +3,8 @@ using MediatR;
 using Persistence.Extensions.ServiceRegistrations;
 using System.Reflection;
 using Infrastructure.CrossCuttingConcerns.Exceptions.Middleware;
+using Serilog.Sinks.MSSqlServer;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationService();
 builder.Services.AddPersistenceServices(builder.Configuration);
+
+Log.Logger = new LoggerConfiguration().CreateBootstrapLogger();
+
+builder.Host.UseSerilog(((ctx, lc) => lc.ReadFrom.Configuration(ctx.Configuration)));
 
 var app = builder.Build();
 
@@ -30,6 +36,9 @@ app.ConfigureCustomExceptionMiddleware();
 
 app.UseAuthorization();
 
+app.UseSerilogRequestLogging();
+
 app.MapControllers();
+
 
 app.Run();
