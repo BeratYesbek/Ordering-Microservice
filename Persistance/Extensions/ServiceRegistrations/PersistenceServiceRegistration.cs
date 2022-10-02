@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Context;
 using Persistence.Repositories;
+using Serilog;
 
 namespace Persistence.Extensions.ServiceRegistrations
 {
@@ -20,7 +21,12 @@ namespace Persistence.Extensions.ServiceRegistrations
             services.AddDbContext<OrderingDbContext>(opt =>
                 opt.UseSqlServer(configuration.GetConnectionString("OrderDbConnectionString")));
 
+            var configurationBuilder = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
+
             services.AddScoped<IOrderRepository, OrderRepository>();
+
 
             return services;
         }

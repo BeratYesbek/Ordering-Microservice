@@ -1,9 +1,9 @@
 ﻿using Application.Features.Orders.Commands.Create;
 using Application.Features.Orders.Queries.GetListByUserId;
-using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Serilog.Events;
+using Serilog;
+using Serilog.Context;
+
 
 namespace WebAPI.Controllers
 {
@@ -11,10 +11,9 @@ namespace WebAPI.Controllers
     [ApiController]
     public class OrdersController : BaseController
     {
-        public OrdersController(Serilog.ILogger logger)
+        public OrdersController(ILogger<OrdersController> logger)
         {
-            //logger.Write(new LogEvent(DateTimeOffset.Now, LogEventLevel.Warning,null,new MessageTemplate("",null),null));
-            logger.Information("Hello World");
+            logger.LogInformation("{BookName}{Message}","The lord of the rings","The lord of the rings has been created");
         }
 
         [HttpPost]

@@ -8,7 +8,9 @@ using Application.Features.Orders.Profiles;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
+using Infrastructure.Aspects.LogAspect;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace Application.Features.Orders.Commands.Create
 {
@@ -22,6 +24,7 @@ namespace Application.Features.Orders.Commands.Create
             _orderRepository = orderRepository;
             _mapper = mapper;
         }
+
         public async Task<CreateOrderDto> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
             var order = _mapper.Map<Order>(request);

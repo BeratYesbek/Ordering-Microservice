@@ -7,6 +7,8 @@ using Application.Features.Orders.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
+using Infrastructure.Aspects.LogAspect;
+using Infrastructure.CrossCuttingConcerns.Logging.Serilog;
 using MediatR;
 
 namespace Application.Features.Orders.Queries.GetListByUserId
@@ -21,6 +23,8 @@ namespace Application.Features.Orders.Queries.GetListByUserId
             _orderRepository = orderRepository;
             _mapper = mapper;
         }
+
+        [LogAspect(typeof(DatabaseLogger))]
         public async Task<List<OrderListDto>> Handle(GetListByUserIdOrderQuery request, CancellationToken cancellationToken)
         {
             var result = await _orderRepository.GetAllAsync();
