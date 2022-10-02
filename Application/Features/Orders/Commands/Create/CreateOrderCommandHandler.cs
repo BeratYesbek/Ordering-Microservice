@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Application.Features.Orders.Dtos;
-using Application.Features.Orders.Profiles;
+﻿using Application.Features.Orders.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
-using Infrastructure.Aspects.LogAspect;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace Application.Features.Orders.Commands.Create
 {

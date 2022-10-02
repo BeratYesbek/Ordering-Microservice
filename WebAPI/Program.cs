@@ -1,9 +1,9 @@
 using Application.Extensions.ServiceRegistirations;
-using MediatR;
 using Persistence.Extensions.ServiceRegistrations;
-using System.Reflection;
 using Infrastructure.CrossCuttingConcerns.Exceptions.Middleware;
-using Serilog.Sinks.MSSqlServer;
+using Infrastructure.DependencyResolvers;
+using Infrastructure.Extensions;
+using Infrastructure.Utilities.IoC;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +14,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationService();
 builder.Services.AddPersistenceServices(builder.Configuration);
-
+builder.Services.AddDependencyResolvers(new ICoreModule[]
+{
+    new CoreModule()
+});
 
 
 builder.Host.UseSerilog();
